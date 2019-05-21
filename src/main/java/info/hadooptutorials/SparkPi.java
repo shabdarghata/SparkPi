@@ -37,7 +37,7 @@ public final class SparkPi {
       return (x * x + y * y <= 1) ? 1 : 0;
     }).reduce((integer, integer2) -> integer + integer2);
 
-    System.out.println("Pi is roughly " + 4.0 * count / n);
+    System.out.println("Pi is roughly:" + 4.0 * count / n);
 
     spark.stop();
   }
